@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS\style.css">
+  <script type="module" src = "JS\script.js"></script>
+  <title>Kobi's Minesweeper</title>
+</head>
+<body>
+  <h3 class="title">Kobi's Minesweeper</h3>
+  <div class="buttons">
+
+    <div class="action_btn">
+
+    <input id="lvl1" type="button" value="Level 1" onclick="buildBoard(4,2);" />
+    <input id="lvl2" type="button" value="Level 1" onclick="buildBoard(8,12);" />
+    <input id="lvl3" type="button" value="Level 1" onclick="buildBoard(12,30);" />
+
+
+    </div>
+
+</div>
+
+  <div class="subtext">
+    <!-- switched number out, no need for it since count will update automitactly(var) -->
+    Mines Left: <span data-mine-count></span>
+  </div>
+  <img id = play class="resize" src="IMG\letsPlayPepe.png" >
+  <div class="board"></div>
+</body>
+</html>
